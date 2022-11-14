@@ -1612,6 +1612,19 @@ section {
   color: #0a98c0;
   
 }
+ms {
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ms:hover {
+  background: #0a98c0;
+  cursor: pointer;
+}
 .button{
   border:none;
   background-color:transparent;
@@ -1623,4 +1636,72 @@ section {
   color:#1bb1dc;
   transition: 0.7s;
   cursor:pointer;
+}
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: #2487ce;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 2px solid #2487ce;
+}
+
+.pricing .box .btn-buy:hover {
+  background: #2487ce;
+  color: #fff;
+}
+
+.pricing .featured {
+  background: #2487ce;
+}
+
+.pricing .featured h3,
+.pricing .featured h4,
+.pricing .featured h4 span,
+.pricing .featured ul,
+.pricing .featured ul .na {
+  color: #fff;
+}
+
+.pricing .featured .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+
+.pricing .featured .btn-buy {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.pricing .featured .btn-buy:hover {
+  background: #fff;
+  color: #2487ce;
+}
+input[type=text], select, textarea {
+ 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1bb1dc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
