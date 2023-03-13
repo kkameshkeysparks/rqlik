@@ -105,6 +105,14 @@
 </head>
 
 <body>
+
+  <div class="popup">
+    <div class="popup-content">
+      <h1>×</h1>
+      <img src="assets/img/rqlik banner.png">
+    </div>
+  </div>
+
   <div class="modal modal_multi">
 
     <!-- Modal content -->
@@ -428,7 +436,7 @@ language
           </ul>
 
         <div style="margin-top:2% ;font-size:8px;height:70%; ">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8bsOwmQRZInshN5eWj3Os6ugK0y-aQiZVeXHTACt36oWrUg/viewform" class="btn-get-started scrollto" style="height: auto; margin-top:1% ;">Enroll Now</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8bsOwmQRZInshN5eWj3Os6ugK0y-aQiZVeXHTACt36oWrUg/viewform" class="btn-get-started scrollto blink" style="height: auto; margin-top:1% ;">Enroll Now</a>
         </div>
 
 
@@ -1314,7 +1322,25 @@ It is our long term wish to train the eligible graduates by bridging the skill g
         modal.style.display = "none";
     }
   
-  
+   // ---------------Auto popup-------------------
+const popup = document.querySelector('.popup');
+const content = document.querySelector('.popup-content');
+const x = document.querySelector('.popup-content h1');
+
+function showPopup() {
+  popup.classList.add('showPopup');
+  content.classList.add('showPopup');
+}
+
+window.addEventListener('load', () => {
+  setTimeout(showPopup, 300); // show popup after 0.3 seconds
+});
+
+x.addEventListener('click', () => {
+  popup.classList.remove('showPopup');
+  content.classList.remove('showPopup');
+});
+
   
   </script>
 
